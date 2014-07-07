@@ -1,0 +1,2 @@
+Editorial App Template
+======================
