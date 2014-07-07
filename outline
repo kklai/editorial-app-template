@@ -1,0 +1,16 @@
+Editorial
+
+1. Set up editorial structure with Google Spreadsheet
+
+
+
+
+Dev
+
+- Custom config.rb
+  - settings: assets, meta dta, social, image_types
+  - Google Drive settings
+- Generate Chorus-config.json
+- Generate layout.erb
+- Generate partials
+- Generate stylesheet modules
