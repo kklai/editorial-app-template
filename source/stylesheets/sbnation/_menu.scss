@@ -1,0 +1,141 @@
+//MENU 
+
+.menu {
+  width: 100%;
+  top: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #000;
+  text-align: center;
+  z-index: 9999999;
+  @media (max-width: $break_medium) {
+    position: fixed !important;
+    &.active .drop {
+      display: block;
+      position: absolute;
+      top: 56px;
+      left: 0px;
+      background: rgba(0,0,0,0.9);
+      padding: 10px;
+      li {
+        display: block;
+      }
+    }
+  }
+  @media (max-width: $break_medium) {
+    height: 56px;
+    padding-right: 5px;
+  }
+  .burger {
+    a {
+      display: none;
+      position: absolute;
+      left: 20px;
+      top: 10px;
+      font-size: 30px;
+      color: white;
+      @media (max-width: $break_medium) {
+        display: block; 
+      }
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  ul {
+    display: block;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+    text-align: left;
+    max-width: 1200px;
+    margin: 0 auto !important;
+    li {
+      position: relative;
+      transition: all ease 0.4s;
+      -webkit-transition: all ease 0.4s;
+      -moz-transition: all ease 0.4s;
+      display: inline-block;
+      padding: 0 8px;
+      font-family: $gotham;
+      line-height: 40px;
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 12px;
+      img {
+        max-width: 115px;
+        margin-bottom: -2px;
+        @media (max-width: $break_medium) {
+          margin-bottom: -10px;
+        }
+      }
+      &.sponsor {
+        float: right;
+        @media (max-width: 465px) {
+          position: absolute;
+          position: absolute;
+          top: 56px;
+          right: 0;
+          display: block !important;
+          background: black;
+          height: 20px;
+        }
+        a {
+          font-weight: 100 !important;
+          font-size: .75em;
+          @media (max-width: $break_medium) {
+            padding-top: 9px;
+          }
+          @media (max-width: 465px) {
+            padding-top: 0;
+            margin-top: -8px;
+          }
+        }
+        img {
+          max-width: 90px;
+          margin-top: -25px;
+          margin-right: 10px;
+          @media (max-width: $break_medium) {
+            vertical-align: middle;
+            margin-top: -15px;
+          }
+        }
+      }
+      &.ss-social {
+        font-family: "SSSocial";
+        font-weight: 100;
+        padding: 0 10px;
+        font-size: 15px;
+        vertical-align: middle;
+        float: right;
+        @media (max-width: $break_medium) {
+          display: block;
+          padding: 0 3%;
+          line-height: 63px;
+        }
+      }
+      a {
+        color: #fff;
+        display: block;
+        -webkit-transition: all ease-in-out 0.3s;
+        -moz-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s;
+        &:hover {
+          text-decoration: none;
+          color: #d40f35;
+        }
+        &.twitter:hover {
+          color: #4099FF;
+        }
+        &.fb:hover {
+          color: #3B5998;
+        }
+    &.gp:hover {
+          color: #d34836;
+        }
+      }
+    }
+  }
+}
